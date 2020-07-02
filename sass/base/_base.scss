@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+    /* Changing predefined css property of whole page*/
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;/* To inherit properties of box-sizing */
+}
+html{/* we want here 10px so when we do by % it wil be 10/16(default font size * 100 =62.5%)*/
+    font-size: 62.5%;/* we change root font-size to 10px so that 1rem=10px */
+}
+
+body {
+    box-sizing: border-box;
+}
