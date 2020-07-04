@@ -1,0 +1,39 @@
+.composition{
+    position: relative;
+    &__photo{
+        width:55%; //we have to always specify width of image in % if possible which help to nicely scale with view port & handy in responsive image
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        // z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;//we can't do this with border
+
+        &--p1{
+            left: 0rem;
+            top: -2rem;     
+            // z-index: 5;
+        }
+        &--p2{
+            right: 0rem;
+            top: 2rem;
+            // z-index: 10;     
+        }
+        &--p3{
+            left: 20%;
+            top: 10rem;  
+            // z-index: 12;     
+
+        }
+
+        &:hover{
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+    &:hover &__photo:not(:hover){
+        transform: scale(.95);
+    }
+}

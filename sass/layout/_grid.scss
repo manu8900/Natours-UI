@@ -1,7 +1,7 @@
 .row{
 // max-width ->1140px -> in rem 1140/10 ->114rem
 max-width: $grid-width;//diff. btw width & max width is max-width entire width of the viewport even if the browser shrink from the specified width
-background-color: #eee;
+
 margin: 0 auto; // when set to auto browser will automatically sets the left & the right margin equally
 
 &:not(:last-child){//not pseudo element specifies margin bottom for every columns except last child
@@ -11,7 +11,7 @@ margin: 0 auto; // when set to auto browser will automatically sets the left & t
 
 //attribute selector ( ^-> starting, $-> ending,*-> containing )
 [class^="col-"]{// ^ -> first charachter & [class^="col-"] selects every class starting with character col-
-    background-color: orangered;
+   
     float: left;
     &:not(:last-child){
         margin-right: $gutter-horizontal;
