@@ -30,3 +30,28 @@
     // background-color: $color-grey-light-1;
     
 }
+.section-book{
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    
+}
+    //SOLID COLOR GRADIENT
+        .book{
+            background-image: linear-gradient(105deg, 
+            rgba($color-white,.8)0%,
+            rgba($color-white,.8)50%,
+            transparent 50%),
+            url(../../img/nat-10.jpg);
+        
+            background-size: cover;
+            border-radius: 3px;
+            box-shadow: 0 4.5rem 4rem rgba($color-black, .2);
+            height: 60rem;
+            
+            //CONTAINER FOR THE FORM 
+            &__form{
+                width: 50%;
+                padding:6rem;
+            }
+        
+        }
