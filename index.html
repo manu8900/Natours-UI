@@ -15,6 +15,26 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        <div class="navigation__background">
+            &nbsp;
+        </div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Natours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -117,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most Popular Tours
@@ -152,7 +172,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">₹22,000</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +205,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">₹35,000</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +238,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">₹40,000</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -345,19 +365,51 @@
             </div>
             <div class="col-1-of-2">
                 <div class="footer__copyright">
-                    Built by 
+                    Built by
                     <a href="#" class="footer__link">
                         Jonas Schmedtmann
                     </a>
-                    for his online course 
+                    for his online course
                     <a href="#" class="footer__link">
                         Advanced CSS and Sass
                     </a>
-                    ,Copyright &copy; by Jonas Schmedtmann.You are 100% allowed to use this webpage for both personal and commercial use,but NOT to claim it as your design.A credit to original author is highly appreciated.
+                    ,Copyright &copy; by Jonas Schmedtmann.You are 100% allowed to use this webpage for both personal
+                    and commercial use,but NOT to claim it as your design.A credit to original author is highly
+                    appreciated.
                 </div>
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">
+                    Start Booking Now
+                </h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    Important &ndash; Please read these terms before booking
+                </h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat erat a egestas lobortis.
+                    Donec in magna ante. Mauris in suscipit nisl. Nam a fermentum sem. In interdum dolor dui, in
+                    vehicula ante malesuada sed. Phasellus vitae ante ac tortor consequat malesuada eget in est.
+                    Phasellus lacinia, leo sit amet tincidunt lobortis, mauris magna rhoncus ante, a sollicitudin lorem
+                    ex in odio. Fusce cursus fermentum metus ac laoreet. Nullam hendrerit aliquam purus vitae varius.
+                    Aliquam volutpat nunc non purus placerat, quis hendrerit nunc lacinia. Aenean pulvinar, turpis
+                    congue tincidunt interdum, nulla massa mattis tortor, sit amet scelerisque est libero sit amet
+                    turpis. Praesent eu nibh eu magna rhoncus viverra. In et sapien lectus.
+                </p>
+                <div class="btn btn--green">
+                    Book Now
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- <section class="grid-test">
         <div class="row">

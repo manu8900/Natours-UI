@@ -1,8 +1,14 @@
-@mixin clearfix{
-    &::after{
+@mixin clearfix {
+    &::after {
         content: "";
-        display:table;
-        clear:both; //left & right float
+        display: table;
+        clear: both; //left & right float
     }
-    
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
